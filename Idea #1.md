@@ -1,14 +1,14 @@
 # Programming Ideas #1
-A idea suggested by @brunozhon, programming ranks (not professional)
-## Absolute Begginer
+A idea suggested by @brunozhon, programming ranks (not professional but could be)
+## Absolute Beginner
 #### Print "Your Name"
 name = "YourNameHere"
 print(f"Hello, {name}")
-## Begginer Max
+## Beginner Max
 #### Count to ten
 for i in range(1, 11):
     print(i)
-## Ultra Begginer
+## Ultra Beginner
 #### To do list app
 tasks = []
 
@@ -65,7 +65,7 @@ for turn in range(9):
         print("Spot taken, try again!")
 else:
     print("It's a draw!")
-## Pro Max
+## Expierienced Pro
 #### Maze maker/solver
 import random
 
@@ -163,9 +163,9 @@ while True:
     print(f"Connection from {client_address}")
     clients.append(client_socket)
     threading.Thread(target=handle_client, args=(client_socket,)).start()
-# file: client.py
+##### file: client.py
 #
-# Handles the client for the game.
+##### Handles the client for the game.
 
 import socket
 import threading
