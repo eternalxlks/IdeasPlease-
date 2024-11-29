@@ -2,15 +2,15 @@
 A idea suggested by @brunozhon, programming ranks (not professional but could be)
 ## Absolute Beginner
 #### Print "Your Name"
-name = "YourNameHere"
-print(f"Hello, {name}")
+<p><code>name = "YourNameHere"
+print(f"Hello, {name}")</code>
 ## Beginner Max
 #### Count to ten
-for i in range(1, 11):
-    print(i)
+<p><code>for i in range(1, 11):
+    print(i)</code></p>
 ## Ultra Beginner
 #### To do list app
-tasks = []
+<p><code>tasks = []
 
 while True:
     print("\nTo-Do List:")
@@ -30,10 +30,10 @@ while True:
     elif choice == "3":
         break
     else:
-        print("Invalid choice!")
+        print("Invalid choice!")</code></p>
 ## Pro
 #### Tic-Tac-Toe!
-board = [' ' for _ in range(9)]
+<p><code>board = [' ' for _ in range(9)]
 
 def print_board():
     for i in range(0, 9, 3):
@@ -64,10 +64,10 @@ for turn in range(9):
     else:
         print("Spot taken, try again!")
 else:
-    print("It's a draw!")
+    print("It's a draw!")</code></p>
 ## Expierienced Pro
 #### Maze maker/solver
-import random
+<p><code>import random
 
 def generate_maze(size):
     maze = [[random.choice([' ', '#']) for _ in range(size)] for _ in range(size)]
@@ -97,9 +97,9 @@ def solve_maze(maze, x, y, path):
 
     path.pop()
     return False
-
+</code></p>
 ##### Generate and solve a maze
-size = 5
+<p><code>size = 5
 maze = generate_maze(size)
 print("Generated Maze:")
 print_maze(maze)
@@ -126,11 +126,11 @@ while True:
     cmd = input(">> ")
     if cmd.lower() == "exit":
         break
-    interpret(cmd)
+    interpret(cmd)</code></p>
 ## Pro Hacker
 #### Multi-Player Online Game!
 
-import socket
+<p><code>import socket
 import threading
 
 clients = []
@@ -162,11 +162,11 @@ while True:
     client_socket, client_address = server.accept()
     print(f"Connection from {client_address}")
     clients.append(client_socket)
-    threading.Thread(target=handle_client, args=(client_socket,)).start()
+    threading.Thread(target=handle_client, args=(client_socket,)).start()</code></p>
 ##### file: client.py
 #
 ##### Handles the client for the game.
-
+<p><code>
 import socket
 import threading
 
@@ -187,10 +187,10 @@ threading.Thread(target=receive_messages, args=(client,)).start()
 print("Connected to server. Type your messages below.")
 while True:
     message = input()
-    client.send(message.encode("utf-8"))
+    client.send(message.encode("utf-8"))</code></p>
 ## God Of Development (GOD)
 #### Minimal Operating System Kernal
-[BITS 16]
+<p><code>[BITS 16]
 [ORG 0x7C00]
 
 start:
@@ -241,7 +241,7 @@ void print_string(char* str) {
 void main() {
     print_string("Hello, OS World!");
     while (1); // Infinite loop to keep the OS running
-}
+}</code></p>
 ##### Build the os using these commands
 nasm -f bin boot.asm -o boot.bin
 gcc -ffreestanding -m32 -c kernel.c -o kernel.o
