@@ -198,10 +198,12 @@ threading.Thread(target=receive_messages, args=(client,)).start()
 print("Connected to server. Type your messages below.")
 while True:
     message = input()
-    client.send(message.encode("utf-8"))</code></p>
+    client.send(message.encode("utf-8"))
+```
 ## God Of Development (GOD)
 #### Minimal Operating System Kernal
-<p><code>[BITS 16]
+```
+[BITS 16]
 [ORG 0x7C00]
 
 start:
