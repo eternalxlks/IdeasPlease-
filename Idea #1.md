@@ -71,10 +71,12 @@ for turn in range(9):
     else:
         print("Spot taken, try again!")
 else:
-    print("It's a draw!")</code></p>
+    print("It's a draw!")
+```
 ## Expierienced Pro
 #### Maze maker/solver
-<p><code>import random
+```
+import random
 
 def generate_maze(size):
     maze = [[random.choice([' ', '#']) for _ in range(size)] for _ in range(size)]
