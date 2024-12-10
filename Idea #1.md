@@ -2,15 +2,20 @@
 A idea suggested by @brunozhon, programming ranks (not professional but could be)
 ## Absolute Beginner
 #### Print "Your Name"
-<p><code>name = "YourNameHere"
-print(f"Hello, {name}")</code>
+```
+name = "YourNameHere"
+print(f"Hello, {name}")
+```
 ## Beginner Max
 #### Count to ten
-<p><code>for i in range(1, 11):
-    print(i)</code></p>
+```
+for i in range(1, 11):
+    print(i)
+```
 ## Ultra Beginner
 #### To do list app
-<p><code>tasks = []
+```
+tasks = []
 
 while True:
     print("\nTo-Do List:")
@@ -30,10 +35,12 @@ while True:
     elif choice == "3":
         break
     else:
-        print("Invalid choice!")</code></p>
+        print("Invalid choice!")
+```
 ## Pro
 #### Tic-Tac-Toe!
-<p><code>board = [' ' for _ in range(9)]
+```
+board = [' ' for _ in range(9)]
 
 def print_board():
     for i in range(0, 9, 3):
@@ -97,9 +104,10 @@ def solve_maze(maze, x, y, path):
 
     path.pop()
     return False
-</code></p>
+```
 ##### Generate and solve a maze
-<p><code>size = 5
+```
+size = 5
 maze = generate_maze(size)
 print("Generated Maze:")
 print_maze(maze)
@@ -126,11 +134,12 @@ while True:
     cmd = input(">> ")
     if cmd.lower() == "exit":
         break
-    interpret(cmd)</code></p>
+    interpret(cmd)
+```
 ## Pro Hacker
 #### Multi-Player Online Game!
-
-<p><code>import socket
+```
+import socket
 import threading
 
 clients = []
@@ -162,11 +171,11 @@ while True:
     client_socket, client_address = server.accept()
     print(f"Connection from {client_address}")
     clients.append(client_socket)
-    threading.Thread(target=handle_client, args=(client_socket,)).start()</code></p>
+    threading.Thread(target=handle_client, args=(client_socket,)).start()
+```
 ##### file: client.py
-#
 ##### Handles the client for the game.
-<p><code>
+```
 import socket
 import threading
 
@@ -241,10 +250,12 @@ void print_string(char* str) {
 void main() {
     print_string("Hello, OS World!");
     while (1); // Infinite loop to keep the OS running
-}</code></p>
+}
+```
 ##### Build the os using these commands
-nasm -f bin boot.asm -o boot.bin
+```nasm -f bin boot.asm -o boot.bin
 gcc -ffreestanding -m32 -c kernel.c -o kernel.o
 ld -m elf_i386 -Ttext 0x1000 --oformat binary kernel.o -o kernel.bin
 cat boot.bin kernel.bin > os_image.bin
 qemu-system-x86_64 -drive format=raw,file=os_image.bin
+```
