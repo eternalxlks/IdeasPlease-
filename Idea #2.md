@@ -221,5 +221,5 @@ document.write() // Display stuff, but replaces the whole website.</code></pre>
     </body>
 </html>
 ```
-# For it:
-<p><a href="http://eternalxlks.github.io/WebPong/">Web Pong!</a></p>
+# The Game:
+[The Actual Game](https://eternalxlks.github.io/WebPong/)
