@@ -30,6 +30,7 @@
 </body>
 </html>
 ```html
+
 ```javascript
 // Arrays of adjectives and nouns. Feel free to change these!
 const adjectives = [
@@ -78,6 +79,4 @@ function generateIdea() {
 
 // Attach event listener to the button
 document.getElementById("generateButton").addEventListener("click", generateIdea);
-```javascript
-
 ```javascript
